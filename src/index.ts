@@ -13,8 +13,6 @@ import { ContextState, CustomContext } from "./types";
 import { authRoutes } from "./routes";
 import { userRoutes } from "./routes";
 
-console.log("AAAA", process.env.MONGODB_URI);
-
 mongoose
   .connect(process.env.MONGODB_URI as string, { useNewUrlParser: true })
   .then((): void => {
