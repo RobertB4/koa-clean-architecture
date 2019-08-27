@@ -1,0 +1,16 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo:4.0.11-xenial
+    ports:
+      - 27017:27017
+  server-dev:
+    image: node:10-alpine
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: npm run dev
+    ports:
+      - 5000:5000
+    depends_on:
+      - mongodb

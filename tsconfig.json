@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "isolatedModules": false,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "skipLibCheck": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": false,
+    "noImplicitReturns": true,
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "lib": ["es2015", "es2016"],
+    "outDir": "build"
+  },
+  "include": ["src/index.ts", "src/**/*"]
+}
